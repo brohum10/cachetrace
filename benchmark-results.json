@@ -1,0 +1,51 @@
+{
+  "python": "3.14.2",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "requests": 100000,
+  "seed": 2026,
+  "scope": "Synthetic in-process replay including validation and optimal preprocessing; excludes CSV I/O. Not production performance.",
+  "results": [
+    {
+      "policy": "lru",
+      "capacity": 256,
+      "hits": 84487,
+      "hit_rate": 0.84487,
+      "median_ms": 32.51616598572582,
+      "samples_ms": [
+        34.24812504090369,
+        32.57991699501872,
+        32.233749981969595,
+        32.17004192993045,
+        32.51616598572582
+      ]
+    },
+    {
+      "policy": "lfu",
+      "capacity": 256,
+      "hits": 84391,
+      "hit_rate": 0.84391,
+      "median_ms": 52.27304098661989,
+      "samples_ms": [
+        52.85199999343604,
+        52.21362505108118,
+        52.159916958771646,
+        52.95016593299806,
+        52.27304098661989
+      ]
+    },
+    {
+      "policy": "optimal",
+      "capacity": 256,
+      "hits": 84744,
+      "hit_rate": 0.84744,
+      "median_ms": 84.49383301194757,
+      "samples_ms": [
+        85.18604096025229,
+        84.00837506633252,
+        83.99020903743804,
+        84.49383301194757,
+        87.40024990402162
+      ]
+    }
+  ]
+}

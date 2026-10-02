@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cachetrace"
+version = "0.1.0"
+description = "Explain cache policy trade-offs by replaying access traces against an offline optimal baseline"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+cachetrace = "cachetrace:main"
+
+[tool.setuptools]
+py-modules = ["cachetrace"]
